@@ -82,7 +82,7 @@ export default {
 
 
   h1 {
-    font-family: $boby;
+    font-family: $abys;
     font-size: 50px;
     font-weight: initial;
   }
@@ -159,7 +159,7 @@ export default {
   }
 
   .section-title {
-    font-family: $boby;
+    font-family: $abys;
     font-size: 30px;
     font-weight: initial;
     position: relative;

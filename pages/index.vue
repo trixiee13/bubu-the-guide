@@ -7,13 +7,11 @@
           li winter activities
           li summer activities
 
+    Navigation
+
     main
-      .intro {{ $t('greeting') }} sdsdf
-      .hi  hi, i'm bubu and i'm a mountain guide
-      .see-all
-        .see-all-text
-          span Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel neque elit. Proin vitae nibh leo.
-          button.type-2 see all adventures
+      //- .intro {{ $t('greeting') }} sdsdf
+      .hi  salut, eu sunt bubu
 
       .mountain_1
         .text
@@ -47,12 +45,15 @@
 
 <script>
 import Logo from '~/components/Logo.vue'
+import Navigation from '~/components/Navigation.vue'
+
 
 export default {
   name: 'App',
 
   components: {
-    Logo
+    Logo,
+    Navigation
   },
 
   head() {
@@ -76,6 +77,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
 @import "~/assets/styles/include.scss";
 
 @keyframes mountain-grow {
@@ -111,7 +114,7 @@ main {
   overflow: hidden;
 
   h1, h2, h3 {
-    font-family: $boby;
+    font-family: $abys;
     font-size: 30px;
     font-weight: initial;
   }
@@ -222,7 +225,7 @@ main {
 }
 
 .intro {
-  font-family: $boby;
+  font-family: $abys;
   transform: rotate(-90deg);
   position: absolute;
   left: -230px;
@@ -431,8 +434,22 @@ nav {
 }
 
 .hi {
-  font-family: $boby;
+  font-family: 'Permanent Marker', cursive;
   left: 0;
+  width: 63vw;
+  position: absolute;
+  top: 60px;
+  font-size: 89px;
+  line-height: 70px;
+  z-index: 1;
+  right: 0;
+  margin: auto;
+}
+
+.hi-1 {
+    font-family: 'Permanent Marker', cursive;
+      font-size: 89px;
+        left: 0;
   width: 63vw;
   position: absolute;
   top: 60px;
